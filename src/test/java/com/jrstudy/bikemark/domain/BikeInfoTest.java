@@ -15,6 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.doesNotHave;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -26,9 +27,9 @@ public class BikeInfoTest {
 
     @Test
     public void getRealtimeBikeInfo() throws Exception {
-        String url = "https://www.bikeseoul.com/app/station/getStationRealtimeStatus.do";
+        String url = "https://www.bikeseoul.com/app/station/getStationRealtimeStatus.do?stationGrpSeq=ALL";
         RestTemplate restTemplate = new RestTemplate();
-        String resultString = restTemplate.getForObject(URI.create(url), String.class);
+        String resultString = restTemplate.postForObject(URI.create(url), null, String.class);
 
         Map<String, List> map = objectMapper.readValue(resultString, new TypeReference<Map>() {});
         List<Map> list = (List<Map>) map.get("realtimeList");
