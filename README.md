@@ -1,4 +1,20 @@
 # Bikemark
+> :bike: bikemark 🕹toy project
+
+## Table of contents
+* [Introduction](#introduction)
+* [Key Features](#key-features)
+* [Technologies](#technologies)
+* [Getting Started](#getting-started)
+
+## Introduction
+
+## Key Features
+
+## Technologies
+- Spring Boot 2.1.9
+- React or React Native
+- MySQL 5.x
 
 ## Getting Started
 To install this example application, run the following commands:
