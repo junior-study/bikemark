@@ -35,7 +35,9 @@ public class BikeInfoTest {
         List<Map> list = (List<Map>) map.get("realtimeList");
 
         BikeInfo bikeInfo = objectMapper.convertValue(list.get(0), BikeInfo.class);
-        assertThat(bikeInfo.getStationName().equals("300. 정동사거리"));
+
+        assertThat(list.size() == 1536);
+        assertThat(bikeInfo.getStationName().equals("108. 서교동 사거리"));
     }
 
 }
