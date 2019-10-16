@@ -1,11 +1,13 @@
 # Bikemark
-> :bike: bikemark 🕹toy project
+> 🚲 bikemark 🕹toy project
 
 ## Table of contents
-* [Introduction](#introduction)
-* [Key Features](#key-features)
-* [Technologies](#technologies)
-* [Getting Started](#getting-started)
+- [Bikemark](#bikemark)
+  - [Table of contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Key Features](#key-features)
+  - [Technologies](#technologies)
+  - [Getting Started](#getting-started)
 
 ## Introduction
 
